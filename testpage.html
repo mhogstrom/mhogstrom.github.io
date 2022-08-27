@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Test page</title>
+		<object name="myheader" type="text/html" data="header.html"></object>
+
+		<link rel="stylesheet" type="text/css" href="mattiashogstrom.css" media="screen" />
+		<script type="text/javasctipt" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+			window.jQuery || document.write('<script src="jquery.js"><\/script>')
+		</script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
+
+		<script type="text/javascript" src="mattiashogstrom.js"></script>
+		<script>
+			$(document).ready(function() {
+
+				var myArray = [ 1, 2, 3, 4, 5 ];
+				var sum = _.reduce(myArray, function(memo, num) { return memo + num;}, 0);
+				$('#content').html(sum);
+
+
+
+
+			});
+
+
+		</script>
+	</head>
+	<body>
+		<p id="content">
+Test Page
+
+
+		</p>
+	</body>
+</html>	

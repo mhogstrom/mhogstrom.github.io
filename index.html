@@ -1,13 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+ <meta charset="UTF-8">
+ <title>Mattias Hogstrom</title>
+ <link rel="stylesheet" type="text/css" href="mattiashogstrom.css" media="screen" />
+ <script type="text/javasctipt" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+ <script type="text/javascript">
+ window.jQuery || document.write('<script src="jquery.js"><\/script>')
+ </script>
+ <script type="text/javascript" src="mattiashogstrom.js"></script>
+ <script type="text/javascript">
+        function makePageVisible(pageId) {
+	  $('.contentpage').hide();
+	  $(pageId).show();
+	}
+	
+	$(document).ready(function() {
+	 $('a#link2Main').click(function(event){ event.preventDefault(); makePageVisible('#mainpage'); return false;});
+	 $('a#link2Pub').click(function(event){ event.preventDefault();makePageVisible('#pubpage'); return false;});
+	 $('a#link2CV').click(function(event){ event.preventDefault();makePageVisible('#cvpage'); return false;});
+	 $('a#link2Contact').click(function(event){ event.preventDefault();makePageVisible('#contactpage'); return false;});
+	 makePageVisible('#mainpage');
+	 drawCanvas();
+	 $('#divMe').fadeIn(4000);
+	 }
+	);
+ </script>
 </head>
 <body>
-    <h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+ <div id="divTitle" style="height:150px;" class="rotate">
+  <a class="hidden" href="http://mattiashogstrom.com">
+   <div>
+    <h1 class="h1h2">Professional Developer</h1> 
+    <h2 class="h1h2">Debugging Expert</h2> 
+   </div>
+  </a>
+ </div>
+ <div id="divMe" style="margin-left:210px;margin-top:-40px;display:none;">
+  <canvas id="myCanvas" height="140" width="124">
+  </canvas>
+ </div>
+ <header style="margin-top:20px;margin-left:50px;">
+  <h1 style="font-family:myFont;">Mattias Högström</h1>
+ </header>
+ <nav id="menubar">
+  <ul id="navlist">
+   <li><a id="link2Main" class="button" ref="pleaseenablejavascript.html">Home</a></li>
+   <li><a id="link2Pub" class="button" href="pleaseenblejavascript.html">Publications</a></li>
+   <li><a id="link2CV" class="button" ref="pleaseenablejavascript.html">Curriculum</a></li>
+   <li><a id="link2Contact" class="button" href="pleaseenablejavascript.html">Contact</a></li>
+  </ul>
+ </nav>
+<table>
+<tr>
+<td style="width:400px">
+<article id="content">
+<div id="mainpage" class="contentpage">
+  <h1>Welcome</h1>
+  <p id="introduction">
+  My name is Mattias Högström, and I live and work in Malmö, Sweden.
+  I work as a system architect at Visma, an important provider of ERP solutions in the nordic market.
+  Although I devevelop mainly in C++ and C#.Net, I like to have an open mind to laguages as well as platforms.
+  I have coded for most platforms during my career.</p>
+  <p>
+  The most mind bending experience was to learn functional languages like F# and Haskel
+  One has to forget everything one knows about programming, and start thinking backwards.
+  One day it says click in your head, and you realize that backwards is actually forwards.
+  I once wrote an article about <a href="http://www.codeproject.com/Articles/520313/Analyzing-profiling-data-from-vsperfcmd">analyzing profiling data</a>, where I wrote the analyzer in F#.  
+  I would love to someday work writing functional code for real.  
+  </p>
+
+  <p>
+  Another mind bending experience, was learning Smalltalk.
+  Why would anyone today, learn a dead language? 
+  Smalltalk was lightyears before its time.
+  Cool and hyped features that have been added to new languages in the recent years, have been available in smaltalk for 20 years.
+  The most awesome developer podcast is called <a href="http://rubyrogues.com/">RubyRogues</a>,
+  it is a panel of skilled developers, that discusses everything from hiring developers to design patterns.
+  For some episodes the panel and its listners reads a book.</p>
+  
+  <div>
+	  <table>
+		  <tr>
+			  <td>
+	  At one point it was the <a href="">Smalltalk Best Practise Patterns</a> by Kent Beck, written in 1996.
+	  </td>
+	  <td>
+	  <img src="smalltalkbestpractisepatterns.jpg" style="display:inline-block;width:50px;height:66px;" />
+  </td>
+  </tr>
+  </table>
+  </div>
+
+  <p>
+  Newer books about design and programming are just copies of that book. 
+  Kent Beck has written newer books for more modern languages,
+  but it is more or less the the same stuff adapted and presented in a new language.
+  It is absolutely amazing that that book was written in 1996.
+  I started my university studies in 1995,
+  and it wasn't until I learned Unit Testing,
+  more than 10 years later that I found amazing design techniques for making the code testable.
+  What feels sad is that the techniques have been around for a very long time, but the book was unknown to me. It was written for an abandoned language. If I had read that book in 1996, I could have been a coding legend myself today. </p>
+ <p>
+ Learning Smalltalk was like being an archaeologist looking lost treasures in some lost temple.
+ As the story goes, I actually found some treasues.
+  </p>
+  <p>
+  One of the biggest Smalltalk distributions is called <a href="http://www.squeak.org/">Squeek</a>.
+  All classes of the Smalltalk distribution, and all methods, have unit tests.
+  That is amazing!! These tests is a treasure. There are new state-of-the-art products today, that don't have full coverage.  
+  </p>
+  <p>
+  The second treasure, was the double-dispatch pattern,
+  which is a nice pattern, for among other things implementing overloading in a dynamic language.
+  Overloading, i.e. having methods with the same name that only differ by parameter types,
+  is not possible in a dynamic language, since it can't discriminate parameters on types.
+  </p>
+
+  <p>
+  My latest hobby project was finishing the article <a href="http://www.codeproject.com/Articles/632390/EtwDataViewer-Analyze-visualize-and-make-sense-of">Log viewer concepts for ETW (Event Tracing for Windows)</a>. It is an attempt of creating structure to flat logs by introducing context and searchability.
+  </p>
+  <p>
+  My long going project at the moment, is taking a Windows 8 development certification.
+  I write once in a while on a metro app, where I apply knowledge that I learn.
+  I am writing a Wine game. I will soon add a small screenshot from it. 
+
+  </p>
+</div>
+<div id="contactpage" class="contentpage">
+	<h1>Contact</h1>
+	<p>
+	I am always interested in meeting new people for discussing technology, exchanging ideas, or just sharing tips and tricks.
+	</p>
+	<p><a href="http://se.linkedin.com/in/mattiashogstrom"><br />
+ <img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Mattias Hogstrom's profile on LinkedIn"><br />
+ </a></p>
+</div>
+<div id="pubpage" class="contentpage">
+	<h1>Publications</h1>
+	<p>
+	Here you can find my debugging articles on <a href="http://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=2151074">CodeProject.com</a>
+	</p>
+	<p><a href="http://www.blackartdebugging.com/">Blog about debugging</a></p>
+	<p><a href="http://projects.mattiashogstrom.com/">Misc development projects</a></p>
+
+</div>
+<div id="cvpage" class="contentpage">
+	<h1>Curriculum</h1>
+</div>
+</article>
+</td>
+ <td style="vertical-align:top;">
+<aside>
+ <nav id="navbar">
+  <ul>
+	  <li><a href="http://www.blackartdebugging.com/">Blog about debugging</a></li>
+	  <li><a href="http://blog.mattiashogstrom.com/">Blog about coding</a></li>
+	  <li><a href="http://www.visma.com/Archive/Visma-Developer-Days-2013/Mattias-Hogstrom/">Presentation at VDD2013, Riga, Latvia</a></li>
+<li><a href="http://www.visma.com/Archive/VDD2014/Day-2/">Presentation at VDD2014, Riga, Latvia</a></li>
+   <li><a href="http://rubyrogues.com/">Ruby Rogues - Developer Podcasts</a></li>
+  </ul>
+ </nav>
+</aside>
+</td>
+</tr>
+</table>
 </body>
-</html>
+</html
