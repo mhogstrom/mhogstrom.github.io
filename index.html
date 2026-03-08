@@ -4,9 +4,9 @@
  <meta charset="UTF-8">
  <title>Mattias Hogstrom</title>
  <link rel="stylesheet" type="text/css" href="mattiashogstrom.css" media="screen" />
- <script type="text/javasctipt" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
  <script type="text/javascript">
- window.jQuery || document.write('<script src="jquery.js"><\/script>')
+ window.jQuery || document.write('<script src="jquery-1.12.4.min.js"><\/script>')
  </script>
  <script type="text/javascript" src="mattiashogstrom.js"></script>
  <script type="text/javascript">
@@ -29,34 +29,34 @@
 </head>
 <body>
  <div id="divTitle" style="height:150px;" class="rotate">
-  <a class="hidden" href="http://mattiashogstrom.com">
+  <a class="hidden" href="https://mattiashogstrom.se">
    <div>
-    <h1 class="h1h2">Cybersecurity Engineer</h1> 
-    <h2 class="h1h2">Application Security Expert</h2> 
+    <h1 class="h1title">Cybersecurity Engineer</h1> 
+    <h2 class="h2title">Application Security Expert</h2> 
    </div>
   </a>
  </div>
- <div id="divMe" style="margin-left:210px;margin-top:-40px;display:none;">
+ <div id="divMe" style="margin-left:500px;margin-top:-40px;display:none;">
   <canvas id="myCanvas" height="140" width="124">
   </canvas>
  </div>
- <header style="margin-top:20px;margin-left:50px;">
-  <h1 style="font-family:myFont;">Mattias Högström</h1>
+ <header style="margin-top:20px;margin-left:350px;">
+  <h1 class="myname">Mattias Högström</h1>
  </header>
  <nav id="menubar">
-  <ul id="navlist">
-   <li><a id="link2Main" class="button" ref="pleaseenablejavascript.html">Home</a></li>
+  <ul id="navlist" style="margin-bottom: 0px;">
+   <li><a id="link2Main" class="button" href="pleaseenablejavascript.html">Home</a></li>
    <li><a id="link2Pub" class="button" href="pleaseenblejavascript.html">Publications</a></li>
-   <li><a id="link2CV" class="button" ref="pleaseenablejavascript.html">Curriculum</a></li>
+   <li><a id="link2CV" class="button" href="pleaseenablejavascript.html">Curriculum</a></li>
    <li><a id="link2Contact" class="button" href="pleaseenablejavascript.html">Contact</a></li>
   </ul>
  </nav>
-<table>
+<table style="margin-top: 0 px; border-spacing: 0 px;">
 <tr>
-<td style="width:400px">
-<article id="content">
+<td style="width:600px;">
+<article id="content" style="padding-top: 0 px;">
 <div id="mainpage" class="contentpage">
-  <h1>Welcome</h1>
+  <h1 class="contenth1">Welcome</h1>
   <p id="introduction">
   My name is Mattias Högström, and I live and work in the south of Sweden.
   I have worked as a developer and software architect for more than 20 years.
@@ -78,27 +78,31 @@
   and it can be a challenge to keep the cores busy, being CPU or GPU cores.
   </p>
 
-
+</div>
 <div id="contactpage" class="contentpage">
-	<h1>Contact</h1>
+	<h1 class="contenth1">Contact</h1>
 	<p>
 	I am always interested in meeting new people for discussing technology, exchanging ideas, or just sharing tips and tricks.
 	</p>
-	<p><a href="http://se.linkedin.com/in/mattiashogstrom"><br />
- <img src="http://www.linkedin.com/img/webpromo/btn_viewmy_160x33.png" width="160" height="33" border="0" alt="View Mattias Hogstrom's profile on LinkedIn"><br />
+	<p><a class="mylink" href="http://se.linkedin.com/in/mattiashogstrom"><br />
+ <img src="LI-In-Bug.png" height="30" border="0" alt="View Mattias Hogstrom's profile on LinkedIn"><br />
  </a></p>
 </div>
 <div id="pubpage" class="contentpage">
-	<h1>Publications</h1>
-	<p>
-	Here you can find my debugging articles on <a href="http://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=2151074">CodeProject.com</a>
-	</p>
-	<p><a href="http://www.blackartdebugging.com/">Blog about debugging</a></p>
-	<p><a href="http://projects.mattiashogstrom.com/">Misc development projects</a></p>
+	<h1 class="contenth1">Articles and Prentations</h1>
+        <p>
+        As a coder I used to publish my hobby projects on https://www.codeproject.com.
+        In the heydays Stackoverflow and CodeProject was the goto sites, to learn, ask the community, and get sample code.
+        CodeProject differed in the sense that it had a section with redacted articles.
+        Main interests at the time was debugging, reversing, and tool creation. 
+        </p>
 
+        <p>
+	Here you can find my debugging articles on <a class="mylink" href="http://www.codeproject.com/script/Articles/MemberArticles.aspx?amid=2151074">CodeProject.com</a>
+	</p>
 </div>
 <div id="cvpage" class="contentpage">
-	<h1>Curriculum</h1>
+	<h1 class="contenth1">Curriculum</h1>
 </div>
 </article>
 </td>
