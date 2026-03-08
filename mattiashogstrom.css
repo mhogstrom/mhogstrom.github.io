@@ -80,7 +80,7 @@ body
 {
 	top: 15px;
 	margin-left: 30px;
-        background: #00000099 url('code.jpg') no-repeat;
+        background: #00000099 url('code.jpg') repeat-y;
         background-blend-mode: darken;
 }
 
