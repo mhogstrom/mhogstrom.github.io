@@ -2,12 +2,14 @@
 {
 	font-family:myFont;
 	src: url(inconsolata.otf);
+        font-size: 16px;
 }
 
 @font-face
 {
 	font-family:myTitleFont;
         src: url(caveat.tff);
+        font-size: 16px;
 }
 
 
@@ -33,6 +35,7 @@
        color: lightgrey;
        font-size: larger;
        background-color: rgba(0, 0, 0, 0.65);
+       min-height: 1900px;
 }
 
 .contentpage .contenth1 {
@@ -49,15 +52,15 @@
 
 .h1title {
 	margin:0px;
-	padding:1px;
-        font-size:60px;
+	padding:10px;
+        font-size:4rem;
 	font-family:myTitleFont;
         color: #F8B035;
 }
 .h2title {
 	margin:0px;
 	padding:1px;
-        font-size:40px;
+        font-size:2rem;
 	font-family:myTitleFont;
         color: #F8B035;
 }
@@ -65,7 +68,7 @@
 .myname {
 	margin:0px;
 	padding:1px;
-        font-size:30px;
+        font-size:2rem;
 	font-family:myFont;
         color: #e87025; 
 }
