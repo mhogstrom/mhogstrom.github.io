@@ -85,15 +85,13 @@ body
 	margin-left: 30px;
         background: #000;
         background-image: 
-          linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('code.jpg'), url('code.jpg');
+          linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('code.jpg');
         background-repeat:
           no-repeat,
-          repeat-y,
           no-repeat;
 
         background-size:
           cover,
-          auto,
           auto;
   background-size:
     cover,
