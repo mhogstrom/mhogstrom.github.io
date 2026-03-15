@@ -6,7 +6,7 @@ function drawCanvas()
 	var canvas = document.getElementById('myCanvas');
 	var x = canvas.width / 2;
 	var y = canvas.height / 2;
-	var radius = 45;
+	var radius = 60;
 	var offset = 50;
 	if (canvas.getContext)
 	{
@@ -28,7 +28,7 @@ function drawCanvas()
 			 //context.translate(-myImg.width * 0.5, -myImg.height * 0.5);
 			 context.drawImage(myImg,0,0);
 		};
-		myImg.src = 'mattiashogstrom.png'; 
+		myImg.src = 'hoodie_www.png'; 
 	}
 }
 
